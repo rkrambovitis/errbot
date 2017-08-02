@@ -40,7 +40,7 @@ except ImportError:
 SLACK_CLIENT_CHANNEL_HYPERLINK = re.compile(r'^<#(?P<id>(C|G)[0-9A-Z]+)>$')
 
 # Empirically determined message size limit.
-SLACK_MESSAGE_LIMIT = 3072
+SLACK_MESSAGE_LIMIT = 65535
 
 USER_IS_BOT_HELPTEXT = (
     "Connected to Slack using a bot account, which cannot manage "
